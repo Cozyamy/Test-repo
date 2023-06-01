@@ -54,6 +54,10 @@ body {
     color: var(--color-black);
 }
 
+.initialNav ul a {
+    color: var(--color-black);
+}
+
 .initialNav div {
     display: flex;
     flex-direction: row;
@@ -81,7 +85,6 @@ body {
     padding: 10px 80px;
     gap: 13%;
     background-color: var(--color-white);
-    align-items: center;
 }
 
 .searchInput {
@@ -162,6 +165,10 @@ body {
 .indexMain h1 {
     font-size: 20px;
     color: #524F4F;
+}
+
+.indexMain h2 {
+    font-size: 18px;
 }
 
 .indexMain section {
@@ -277,4 +284,132 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 99px;
+}
+
+/*media query for index page */
+
+@media only screen and (max-width: 1115px) {
+    .initialNav {
+        margin: 30px 60px;
+
+    }
+
+    .initialNav ul {
+        gap: 35px;
+    }
+
+    .searchNav {
+        padding: 10px 50px;
+        gap: 10%;
+    }
+
+    .searchInput input {
+        width: 465px;
+    }
+
+    .productDiv {
+        gap: 2%;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .searchInput input {
+        width: 400px;
+    }
+
+    .indexMain article {
+        width: 200px;
+    }
+
+    .productDetails img {
+        width: 200px;
+        height: auto;
+    }
+
+    .productDetails ul {
+        gap: 14px;
+    }
+
+    .productDetails div li {
+        font-size: 11px;
+    }
+
+    .productDetails ul p {
+        padding: 4px;
+    }
+
+    .indexFooter {
+        padding: 30px 80px;
+    }
+
+    .indexFooter section {
+        gap: 10%;
+    }
+}
+
+@media only screen and (max-width: 947px) {
+    .searchInput input {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 847px) {
+    .searchInput input {
+        width: 240px;
+    }
+
+    .indexFooter div {
+        gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .initialNav ul {
+        font-size: 16px;
+    }
+
+    .initialNav div {
+        font-size: 14px;
+    }
+
+    .searchNav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .searchInput input {
+        width: 100%;
+    }
+
+    .searchNav img {
+        display: grid;
+        margin: auto;
+    }
+
+    .cartLi {
+        align-self: flex-end;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .productDiv {
+    display: grid;
+    gap: 10%;
+    grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer'
+    ;
+}
+
+    .indexFooter div {
+        gap: 40px;
+    }
 }
