@@ -258,7 +258,7 @@ hr {
 
 .indexFooter {
     background-color: #790C9E;
-    padding: 30px 150px;
+    padding: 40px 150px;
 }
 
 .indexFooter section {
@@ -284,6 +284,7 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 99px;
+    margin-top: -50px;
 }
 
 /*media query for index page */
@@ -309,6 +310,10 @@ hr {
 
     .productDiv {
         gap: 2%;
+    }
+
+    .indexFooter div {
+        gap: 60px;
     }
 }
 
@@ -351,19 +356,23 @@ hr {
     .searchInput input {
         width: 320px;
     }
+
+    .indexFooter div {
+        gap: 40px;
+    }
 }
 
 @media only screen and (max-width: 847px) {
     .searchInput input {
         width: 240px;
     }
-
-    .indexFooter div {
-        gap: 60px;
-    }
 }
 
 @media only screen and (max-width: 750px) {
+    .loginBtn, .registerBtn {
+        padding: 10px;
+    }
+
     .initialNav ul {
         font-size: 16px;
     }
@@ -399,17 +408,98 @@ hr {
         width: 100%;
     }
 
+    h2 {
+        background-color: #790C9E;
+        padding: 10px 30px;
+        color: var(--color-white);
+        border-radius: 8px;
+        text-align: center;
+        border-top: 4px solid #AD88B9;
+        border-bottom: 4px solid #AD88B9;
+    }
+
     .productDiv {
-    display: grid;
-    gap: 10%;
-    grid-template-areas:
-    'header header header'
-    'main main main'
-    'footer footer footer'
-    ;
+        gap: 20px;
+        grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer'
+        ;
+    }
+
+    .indexMain article {
+        width: 100%;
+    }
+
+    .productDetails img {
+        width: 100%;
+        height: auto;
+    }
+
+    .productName {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
 }
+
+    .productDetails ul {
+        gap: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: ;
+    }
+
+    .productDetails div li {
+        font-size: 16px;
+    }
+
+    .productDetails ul p {
+        padding: 8px;
+    }
+
+    .indexFooter img {
+        margin-bottom: 20px;
+    }
+
+    .indexFooter section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .indexFooter article {
+        width: 100%;
+        gap: 30px;
+        font-weight: var(--font-weight-semibold);
+    }
 
     .indexFooter div {
         gap: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .initialNav {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .initialNav {
+        margin: 30px 40px;
+    }
+
+    .initialNav ul {
+        gap: 20px;
+    }
+
+    .indexMain {
+        margin: 20px 30px;
+    }
+
+    .indexFooter {
+        padding: 30px 40px;
     }
 }
