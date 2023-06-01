@@ -58,6 +58,10 @@ body {
     color: var(--color-black);
 }
 
+.initialNav ul a:hover {
+    color: var(--color-primary);
+}
+
 .initialNav div {
     display: flex;
     flex-direction: row;
@@ -71,6 +75,12 @@ body {
     color: var(--color-primary);
 }
 
+.loginBtn:hover {
+    background-color: #AD88B9;
+    border: none;
+    color: var(--color-background);
+}
+
 .registerBtn {
     background-color: var(--color-primary);
     border-radius: 0px 10px 10px 0px;
@@ -79,12 +89,20 @@ body {
     color: var(--color-background);
 }
 
+.registerBtn:hover {
+    background-color: #AD88B9;
+}
+
 .searchNav {
     display: flex;
     flex-direction: row;
     padding: 10px 80px;
     gap: 13%;
     background-color: var(--color-white);
+}
+
+.searchNav img:hover {
+    cursor: pointer;
 }
 
 .searchInput {
@@ -107,6 +125,11 @@ body {
     color: var(--color-background);
     text-align: center;
     height: 63px;
+}
+
+.search:hover {
+    cursor: pointer;
+    background-color: #AD88B9;
 }
 
 .cartLi {
@@ -133,6 +156,11 @@ body {
     color: #F5EFEF;
 }
 
+.cart:hover {
+    cursor: pointer;
+    background-color: var(--color-primary);
+}
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -143,16 +171,28 @@ body {
     background: linear-gradient(180deg, rgba(144, 49, 177, 0.3) 0%, rgba(144, 49, 177, 0.0833333) 6.77%, rgba(144, 49, 177, 0) 86.98%, rgba(144, 49, 177, 0.25) 100%);
 }
 
-.menu li {
+.menu a {
     padding: 16px;
     border-radius: 8px;
     border: 1px solid #9031B1;
     text-align: center;
+    color: var(--color-black);
+}
+
+.menu a:hover {
+    background-color: #AD88B9;
+    border: none;
+    cursor: pointer;
+    color: var(--color-background);
 }
 
 .menuHome {
     background-color: #9031B1;
     color: var(--color-white);
+}
+
+.menuHome:hover {
+    background-color: #AD88B9;
 }
 
 .indexMain {
@@ -230,6 +270,7 @@ hr {
 .productDetails ul li {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .productDetails ul p {
@@ -249,11 +290,19 @@ hr {
     color: #F5EFEF;
 }
 
+.carts:hover {
+    background-color: var(--color-primary);
+}
+
 .heart {
     border-radius: 10px;
     background-color: #AD88B9;
     padding: 16px;
     color: #F5EFEF;
+}
+
+.heart:hover {
+    background-color: var(--color-primary);
 }
 
 .indexFooter {
@@ -270,6 +319,14 @@ hr {
 
 .indexFooter a {
     color: var(--color-white);
+}
+
+.indexFooter a:hover {
+    padding: 8px;
+    width: 40%;
+    text-align: center;
+    border: 1px solid #AD88B9;
+    border-radius: 10px;
 }
 
 .indexFooter article {
@@ -404,7 +461,7 @@ hr {
         gap: 20px;
     }
 
-    .menu li {
+    .menu a {
         width: 100%;
     }
 
