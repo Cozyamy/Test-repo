@@ -32,7 +32,7 @@ html {
     --font-weight-bold: 700;
 }
 
-body {
+.indexBody  {
     background-color: var(--color-background);
 }
 
@@ -96,6 +96,8 @@ body {
 .searchNav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 80px;
     gap: 13%;
     background-color: var(--color-white);
@@ -235,7 +237,7 @@ body {
     width: 300px;
 }
 
-hr {
+.indexMain hr {
     border: 2px solid #B6B1B1;
 }
 
@@ -322,11 +324,7 @@ hr {
 }
 
 .indexFooter a:hover {
-    padding: 8px;
-    width: 40%;
-    text-align: center;
-    border: 1px solid #AD88B9;
-    border-radius: 10px;
+    text-decoration: underline;
 }
 
 .indexFooter article {
@@ -438,24 +436,6 @@ hr {
         font-size: 14px;
     }
 
-    .searchNav {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .searchInput input {
-        width: 100%;
-    }
-
-    .searchNav img {
-        display: grid;
-        margin: auto;
-    }
-
-    .cartLi {
-        align-self: flex-end;
-    }
-
     .menu {
         flex-direction: column;
         gap: 20px;
@@ -465,7 +445,7 @@ hr {
         width: 100%;
     }
 
-    h2 {
+    .indexMain h2 {
         background-color: #790C9E;
         padding: 10px 30px;
         color: var(--color-white);
@@ -560,3 +540,180 @@ hr {
         padding: 30px 40px;
     }
 }
+
+/* REGISTER PAGE */
+
+.registerBody {
+    background-image: linear-gradient(180deg, rgba(144, 49, 177, 0.3) 0%, rgba(144, 49, 177, 0.0833333) 6.77%, rgba(144, 49, 177, 0) 86.98%, rgba(144, 49, 177, 0.25) 100%);
+    height: 900px;
+    color: var(--color-black);
+    margin: 80px;
+}
+
+.registerHeader {
+    text-align: center;
+}
+
+.registerForm {
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid #BFBFBF;
+    padding: 38px 50px;
+    gap: 24px;
+    color: #3F3E40;
+}
+
+.registerForm input {
+    border: 1px solid BFBFBF;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.registerForm div {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 40px;
+}
+
+.registerForm div button {
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    padding: 16px;
+    border: none;
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.registerForm div button:hover {;
+    background-color: #AD8BB9;
+    cursor: pointer;
+}
+
+.registerForm div p {
+    text-align: center;
+}
+
+.backbtn {
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    padding: 8px;
+    color: var(--color-primary);
+    align-self: flex-start;
+}
+
+.backbtn:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #AD8BB9;
+    color: var(--color-background);
+}
+
+@media only screen and (max-width: 600px) {
+    .registerBody {
+        margin: 40px;
+        margin-bottom: 60px;
+    }
+
+    .registerHeader h1 {
+        font-size: 30px;
+    }
+
+    .registerForm {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .registerBody {
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    .registerHeader h1 {
+        font-size: 20px;
+    }
+
+    .registerForm {
+        padding: 20px;
+        gap: 16px;
+    }
+
+}
+
+/* LOGIN PAGE */
+
+.loginBody {
+    height: 600px;
+}
+
+/* Profile page */
+
+.profileMain {
+    margin-bottom: 60px;
+}
+
+.click {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: auto;
+    border-radius: 8px 8px 0px 0px;
+    padding: 16px;
+    font-size: 20px;
+    background-color: rgba(225, 220, 226, 0.31);
+    border: 1px solid rgba(145, 144, 144, 0.63);
+    width: 80%;
+}
+
+.updateForm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    border-radius: 0px 0px 24px 24px;
+    border: 1px solid rgba(145, 144, 144, 0.63);
+    padding: 38px 50px;
+    gap: 24px;
+    color: #3F3E40;
+}
+
+.updateForm button {
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    padding: 16px;
+    border: none;
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.updateForm button:hover {;
+    background-color: #AD8BB9;
+    cursor: pointer;
+}
+
+.updateForm textarea {
+    border: 1px solid BFBFBF;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* track page */
+.trackHeader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+} 
+
+.trackForm {
+    border-radius: 24px;
+}
+
+/* dashboard */
+.row-no-margin {
+   margin-left: 0px;
+   margin-right: 0px;
+} 
