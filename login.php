@@ -102,7 +102,7 @@ error:function (){}
 				<p>Don't have an Account?
 					<a href="register.php">Register</a>
 				</p>
-				<a style="text-align: center;" href="fogot.php">Forgot password</a>
+				<a style="text-align: center;" href="forgot.php">Forgot password</a>
 			</div>
 			<a class="backbtn" href="index.html">Back to Home</a>
 		</form>

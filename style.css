@@ -45,6 +45,12 @@ html {
 
 }
 
+.initialProfile {
+    font-size: 20px;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-black);
+}
+
 .initialNav ul {
     display: flex;
     flex-direction: row;
@@ -59,6 +65,10 @@ html {
 }
 
 .initialNav ul a:hover {
+    color: var(--color-primary);
+}
+
+.initialProfile:hover {
     color: var(--color-primary);
 }
 
@@ -198,7 +208,7 @@ html {
 }
 
 .indexMain {
-    margin: 20px 80px;
+    margin: 0px 80px;
     display: flex;
     flex-direction: column;
     gap: 36px;
@@ -717,3 +727,11 @@ html {
    margin-left: 0px;
    margin-right: 0px;
 } 
+
+.dashnav {
+    background: linear-gradient(180deg, rgba(144, 49, 177, 0.3) 0%, rgba(144, 49, 177, 0.0833333) 6.77%, rgba(144, 49, 177, 0) 86.98%, rgba(144, 49, 177, 0.25) 100%);
+}
+
+.rows { 
+    flex-direction: row-reverse; 
+}

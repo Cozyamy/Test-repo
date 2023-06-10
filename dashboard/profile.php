@@ -70,58 +70,8 @@ echo "<script>alert('Billing Address has been updated');</script>";
 echo "<script>alert('Shipping Address has been updated');</script>";
 		}
 	}
-
+include('header.php');
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../style.css?version=1">
-	<link rel="icon" type="image/svg" sizes="32x32" href="../images/LOGO.svg">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>SIKU FURNITURE HOME</title>
-</head>
-<body class="indexBody">
-	<header>
-		<nav class="initialNav">
-			<ul>
-				<li>
-					<?php if(strlen($_SESSION['login'])){ ?>
-					Welcome <?php echo htmlentities($_SESSION['username']);?><?php } ?>	
-				</li>
-				<li>
-					<a href="profile.php">My Account</a>
-				</li>
-				<li>
-					<a href="wishlist.php">Wishlist</a>
-				</li>
-			</ul>
-			<div>
-				<a class="loginBtn" href="track.php">Track Order</a>
-				<a class="registerBtn" href="logout.php">Logout</a>
-			</div>
-		</nav>
-		<ul class="searchNav">
-			<li>
-				<img src="../images/LOGO.svg">
-			</li>
-			<li class="cartLi">
-				<p>CART
-					<span>0.00</span>
-				</p>
-				<i class="fa fa-shopping-cart cart"></i>
-			</li>
-		</ul>
-		<div class="menu">
-			<a class="menuHome" href="dashboard.php#home" style="color: #FCFCFC;">HOME</a>
-			<a href="dashboard.php#beds">BEDS</a>
-			<a href="dashboard.php#tables">TABLES</a>
-			<a href="dashboard.php#chairs">CHAIRS</a>
-			<a href="dashboard.php#shelves">SHELVES</a>
-		</div>
-	</header>
 	<main class="profileMain">
 		<ul>
 			<li>
@@ -215,15 +165,13 @@ echo "<script>alert('Shipping Address has been updated');</script>";
 			</article>
 			<article>
 				<a href="profile.php">Profile Details</a>
-				<a href="wishlist.php">Wishlist</a>
-				<a href="track.php">Track Order</a>
 				<a href="logout.php">Logout</a>
 			</article>
 			<article>
-				<a href="#beds">Beds</a>
-				<a href="#tables">Tables</a>
-				<a href="#shelves">Shelves</a>
-				<a href="#chairs">Chairs</a>
+				<a href="dashboard.php#products">Beds</a>
+				<a href="dashboard.php#products">Tables</a>
+				<a href="dashboard.php#products">Shelves</a>
+				<a href="dashboard.php#products">Chairs</a>
 			</article>
 		</section>
 		<div>
