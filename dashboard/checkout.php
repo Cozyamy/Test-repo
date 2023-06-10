@@ -209,8 +209,8 @@ if (empty($_SESSION['login']))
             ?>
            
             <li class="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong>$<?php echo number_format($total,2);?></strong>
+              <span>Total </span>
+              <strong>₦<?php echo number_format($total,2);?></strong>
             </li>
           </ul>
         </div>
@@ -262,14 +262,50 @@ if (empty($_SESSION['login']))
                 <label for="country">Country</label>
                 <select class="custom-select d-block w-100" name="country" id="country" >
                   <option value="">Choose...</option>
-                  <option value="United States" >United States</option>
+                  <option value="Nigeria" >Nigeria</option>
                 </select>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="state">State</label>
                 <select class="custom-select d-block w-100" name="state" id="state" >
                   <option value="">Choose...</option>
-                  <option value="California">California</option>
+                  <option>ABUJA FCT</option>
+                <option>ABIA</option>
+                <option>ADAMAWA</option>
+                <option>AKWA IBOM</option>
+                <option>ANAMBRA</option>
+                <option>BAUCHI</option>
+                <option>BAYELSA</option>
+                <option>BENUE</option>
+                <option>BORNO</option>
+                <option>CROSS RIVER</option>
+                <option>DELTA</option>
+                <option>EBONYI</option>
+                <option>EDO</option>
+                <option>EKITI</option>
+                <option>ENUGU</option>
+                <option>GOMBE</option>
+                <option>IMO</option>
+                <option>JIGAWA</option>
+                <option>KADUNA</option>
+                <option>KANO</option>
+                <option>KATSINA</option>
+                <option>KEBBI</option>
+                <option>KOGI</option>
+                <option>KWARA</option>
+                <option>LAGOS</option>
+                <option>NASSARAWA</option>
+                <option>NIGER</option>
+                <option>OGUN</option>
+                <option>ONDO</option>
+                <option>OSUN</option>
+                <option>OYO</option>
+                <option>PLATEAU</option>
+                <option>RIVERS</option>
+                <option>SOKOTO</option>
+                <option>TARABA</option>
+                <option>YOBE</option>
+                <option>ZAMFARA</option>
                 </select>
               </div>
               <div class="col-md-3 mb-3">
