@@ -1,8 +1,8 @@
-# Test-repo
+# Test-repo --
 
 # E-commerce website
  
- This is an e-commerce website for furnitures. which allows users add products to their cart and pay on delivery
+ This is an e-commerce website for furnitures. which allows users add products to their cart and pay on delivery.
 
 ## USEFUL LINKS
  - [Product Design (UI/UX) URL](https://www.figma.com/file/194MavmhAB8SlFxnBdawwL/Siku-Furniture-Home?type=design&node-id=1%3A2&t=39O0mPSs6FcAKoHs-1)
