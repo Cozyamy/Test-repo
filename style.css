@@ -735,3 +735,74 @@ html {
 .rows { 
     flex-direction: row-reverse; 
 }
+
+/* about page */
+
+.aboutMain {
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.aboutMain h1, .aboutMain h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+}
+
+.aboutMain section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutMain p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.aboutMain div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.aboutMain section p a {
+    color: blue;
+}
+
+.aboutMain a:hover {
+    text-decoration: underline;
+}
+
+.fa-github-square {
+    color: #000000;
+}
+
+.fa-twitter-square{
+    color: blue;
+}
+
+.repo {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutMain {
+        margin: 30px 40px;
+    }
+
+    .aboutMain p {
+        font-size: 16px;
+    }
+
+    .aboutMain h1, .aboutMain h2 {
+        font-size: 20px;
+    }
+} 

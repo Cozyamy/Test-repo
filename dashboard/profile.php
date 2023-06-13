@@ -165,6 +165,7 @@ include('header.php');
 			</article>
 			<article>
 				<a href="profile.php">Profile Details</a>
+				<a href="../about.html" target="_blank">About</a>
 				<a href="logout.php">Logout</a>
 			</article>
 			<article>
